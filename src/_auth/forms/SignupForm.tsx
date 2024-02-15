@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { useForm } from "react-hook-form"
 import { useToast } from "@/components/ui/use-toast"
 import { SignupValidation } from "@/lib/validation"
-import Loader from "@/components/ui/shared/Loader"
+import Loader from "@/components/shared/Loader"
 import { useCreateUserAccount, useSignInAccount } from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
 
