@@ -7,7 +7,7 @@ import { INITIAL_USER, useUserContext } from '@/context/AuthContext';
 
 const Topbar = () => {
     const { mutate: signOut, isSuccess } = useSignOutAccount();
-    const { user, setUser, setIsAuthenticated, isLoading } = useUserContext();
+    const { user, setUser, setIsAuthenticated } = useUserContext();
 
     const handleSignOut = async (
         e: React.MouseEvent<HTMLButtonElement, MouseEvent>

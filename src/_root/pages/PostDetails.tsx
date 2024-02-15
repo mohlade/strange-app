@@ -2,10 +2,8 @@ import Loader from '@/components/shared/Loader';
 import PostStats from '@/components/shared/PostStats';
 import { Button } from '@/components/ui/button';
 import { useUserContext } from '@/context/AuthContext';
-import { deletePost } from '@/lib/appwrite/api';
 import { useGetPostById } from '@/lib/react-query/queriesAndMutations';
 import { multiFormatDateString } from '@/lib/utils';
-import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 
 const PostDetails = () => {
@@ -93,8 +91,9 @@ const PostDetails = () => {
                                 ))}
                             </ul>
                         </div>
+
                         <div className="w-full">
-                            <PostStats post={post} userId={user.id} />
+                            <PostStats userId={user.id} post={post} />
                         </div>
                     </div>
                 </div>
